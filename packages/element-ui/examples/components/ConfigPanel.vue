@@ -172,21 +172,6 @@ export default defineComponent({
                 {
                     label: '板块开关', children: [
                         {
-                            label: '左侧边栏',
-                            value: 'showMenuBar',
-                            img: 'https://view.form-create.com/img/hidden1.png'
-                        },
-                        {
-                            label: '多语言板块',
-                            value: 'showLanguage',
-                            img: 'https://view.form-create.com/img/version-550-2.png'
-                        },
-                        {
-                            label: 'JSON预览板块',
-                            value: 'showJsonPreview',
-                            img: 'https://view.form-create.com/img/version-541-2.png'
-                        },
-                        {
                             label: '多端切换按钮',
                             value: 'showDevice',
                             img: 'https://view.form-create.com/img/showDevice.png'

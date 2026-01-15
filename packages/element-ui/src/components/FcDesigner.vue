@@ -2,59 +2,8 @@
     <el-container class="_fc-designer" :style="height ? `height:${dragHeight};flex:0;` : ''" @dragenter="handleDragenter" @dragleave="handleDragleave" @drop="handleDrop">
         <el-main>
             <el-container style="height: 100%;" :key="locale && locale.name">
-                <el-aside class="_fc-l-menu" v-show="!hiddenLeft" width="40px" v-if="false !== getConfig('showMenuBar')">
-                    <el-tooltip
-                        effect="dark"
-                        :content="t('designer.comList')"
-                        placement="right"
-                        :hide-after="0"
-                    >
-                        <div class="_fc-l-menu-item" :class="{active: activeModule === 'base'}"
-                             @click="activeModule = 'base'">
-                            <i class="fc-icon icon-menu"></i>
-                        </div>
-                    </el-tooltip>
-                    <el-tooltip
-                        v-if="getConfig('showLanguage', true)"
-                        effect="dark"
-                        :content="t('language.name')"
-                        placement="right"
-                        :hide-after="0"
-                    >
-                        <div class="_fc-l-menu-item" :class="{active: activeModule === 'language'}"
-                             @click="activeModule = 'language'">
-                            <i class="fc-icon icon-language"></i>
-                        </div>
-                    </el-tooltip>
-                    <el-tooltip
-                        v-if="getConfig('showJsonPreview', true)"
-                        effect="dark"
-                        content="JSON"
-                        placement="right"
-                        :hide-after="0"
-                    >
-                        <div class="_fc-l-menu-item" :class="{active: activeModule === 'json'}"
-                             @click="activeModule = 'json'">
-                            <i class="fc-icon icon-script"></i>
-                        </div>
-                    </el-tooltip>
-                    <el-tooltip
-                        v-if="getConfig('showAi', true)"
-                        effect="dark"
-                        :content="t('ai.name')"
-                        placement="right"
-                        :hide-after="0"
-                    >
-                        <div class="_fc-l-menu-item" :class="{ active: activeModule === 'ai' }" @click="activeModule = 'ai'">
-                            <i class="fc-icon icon-ai bright"></i>
-                        </div>
-                    </el-tooltip>
-                </el-aside>
-                <el-aside class="_fc-l" v-if="!hiddenLeft" :width="activeModule === 'language' || activeModule === 'ai' ? '450px' : '266px'">
+                <el-aside class="_fc-l" v-if="!hiddenLeft" width="266px">
                     <div class="_fc-l-close" @click="hiddenLeft = true"><i class="fc-icon icon-arrow"></i></div>
-                    <FcAiPanel v-show="activeModule === 'ai'"></FcAiPanel>
-                    <LanguageConfig v-if="activeModule === 'language'"></LanguageConfig>
-                    <JsonPreview v-if="activeModule === 'json'"></JsonPreview>
                     <el-container style="height: 100%;" v-if="activeModule === 'base'">
                         <el-header height="40px" class="_fc-l-tabs">
                             <div class="_fc-l-tab" :class="{active: activeMenuTab==='menu'}"
@@ -474,8 +423,6 @@ import xml from '../utils/highlight/xml.min';
 import javascript from '../utils/highlight/javascript.min';
 import TypeSelect from './TypeSelect.vue';
 import PropsInput from './PropsInput.vue';
-import LanguageConfig from './language/LanguageConfig.vue';
-import FcAiPanel from './ai/AiPanel.vue';
 import JsonPreview from './JsonPreview.vue';
 import Warning from './Warning.vue';
 import mergeProps from '@form-create/utils/lib/mergeprops';
@@ -490,8 +437,6 @@ export default defineComponent({
         ConfigItem,
         Warning,
         JsonPreview,
-        FcAiPanel,
-        LanguageConfig,
         PropsInput,
         TypeSelect,
         fcDraggable,

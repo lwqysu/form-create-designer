@@ -20,7 +20,6 @@ const ZhCn = {
         formMode: '表单模式',
         formName: '表单名称',
         componentMode: '生成组件',
-        htmlMode: '生成HTML',
         document: '帮助文档',
         controlDocument: '需要更详细的配置方法？请查看{doc}',
         onSubmit: '表单提交时触发',
@@ -300,12 +299,6 @@ const ZhCn = {
         dragEmpty: '拖拽左侧列表中的组件到此处',
         unload: '确定离开当前页面吗?',
         comList: '组件列表',
-    },
-    language: {
-        name: '国际化配置',
-        add: '新增词条',
-        batchRemove: '批量删除',
-        select: '选择多语言',
     },
     menu: {
         main: '基础组件',
