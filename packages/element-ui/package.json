@@ -87,6 +87,7 @@
         "@form-create/utils": "^3.2.31",
         "codemirror": "^6.65.7",
         "element-plus": "^2.11.1",
+        "fc-aui-web": "^1.1.9",
         "js-beautify": "^1.15.1",
         "marked": "^17.0.0",
         "signature_pad": "^5.0.10",

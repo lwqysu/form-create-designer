@@ -1451,7 +1451,7 @@ export default defineComponent({
                 data.propsForm.isShow = false;
                 data.eventShow = false;
                 data.validateForm.isShow = false;
-                data.styleForm.isShow = !!config.style && methods.getConfig('showStyleForm') !== false;
+                data.styleForm.isShow = false;
                 data.activeRule = null;
                 data.activePermission = {};
                 fcx.active = '';
@@ -1558,7 +1558,7 @@ export default defineComponent({
                 const input = hasProperty(rule, 'field');
                 data.baseForm.isShow = permission.base !== false && input && rule.input !== false && methods.getConfig('showBaseForm') !== false;
                 data.propsForm.isShow = permission.props !== false && data.cacheProps[rule._fc_id].length > 0 && methods.getConfig('showPropsForm') !== false;
-                data.styleForm.isShow = permission.style !== false && rule._menu.style !== false && methods.getConfig('showStyleForm') !== false;
+                data.styleForm.isShow = false;
                 data.eventShow = permission.event !== false && rule._menu.event !== false && methods.getConfig('showEventForm') !== false;
                 const showValidateForm = methods.getConfig('showValidateForm');
                 data.validateForm.isShow = permission.validate !== false && ((data.baseForm.isShow && showValidateForm !== false) || showValidateForm === true) && rule._menu.validate !== false;

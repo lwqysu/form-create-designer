@@ -164,9 +164,9 @@ export default defineComponent({
                 {label: '显示编码', value: 'name'},
                 {label: '基础配置', value: 'base'},
                 {label: '组件配置', value: 'props'},
-                {label: '样式配置', value: 'style'},
-                {label: '事件配置', value: 'event'},
-                {label: '验证配置', value: 'validate'},
+                // {label: '样式配置', value: 'style'},
+                // {label: '事件配置', value: 'event'},
+                // {label: '验证配置', value: 'validate'},
             ],
             feature: [
                 {
@@ -265,26 +265,26 @@ export default defineComponent({
                             value: 'showPropsForm',
                             img: 'https://view.form-create.com/img/showPropsForm.png'
                         },
-                        {
-                            label: '组件样式配置',
-                            value: 'showStyleForm',
-                            img: 'https://view.form-create.com/img/showStyleForm.png'
-                        },
-                        {
-                            label: '组件事件配置',
-                            value: 'showEventForm',
-                            img: 'https://view.form-create.com/img/showEventForm.png'
-                        },
-                        {
-                            label: '组件验证配置',
-                            value: 'showValidateForm',
-                            img: 'https://view.form-create.com/img/showValidateForm.png'
-                        },
-                        {
-                            label: '只显示组件必填验证',
-                            value: 'validateOnlyRequired',
-                            img: 'https://pro.form-create.com/doc/img/validateOnlyRequired.png'
-                        },
+                        // {
+                        //     label: '组件样式配置',
+                        //     value: 'showStyleForm',
+                        //     img: 'https://view.form-create.com/img/showStyleForm.png'
+                        // },
+                        // {
+                        //     label: '组件事件配置',
+                        //     value: 'showEventForm',
+                        //     img: 'https://view.form-create.com/img/showEventForm.png'
+                        // },
+                        // {
+                        //     label: '组件验证配置',
+                        //     value: 'showValidateForm',
+                        //     img: 'https://view.form-create.com/img/showValidateForm.png'
+                        // },
+                        // {
+                        //     label: '只显示组件必填验证',
+                        //     value: 'validateOnlyRequired',
+                        //     img: 'https://pro.form-create.com/doc/img/validateOnlyRequired.png'
+                        // },
                     ],
                 },
             ],
@@ -315,9 +315,9 @@ export default defineComponent({
                 showControl: true,
                 showAdvancedForm: true,
                 showPropsForm: true,
-                showStyleForm: true,
-                showEventForm: true,
-                showValidateForm: true,
+                showStyleForm: false,
+                showEventForm: false,
+                showValidateForm: false,
                 showFormConfig: true,
                 showTemplate: true,
                 showDevice: true,

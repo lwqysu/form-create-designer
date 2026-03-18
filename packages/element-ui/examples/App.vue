@@ -77,14 +77,7 @@ export default {
                 fieldReadonly: false,
                 showSaveBtn: true,
             },
-            handle: [
-                {
-                    label: '中英切换',
-                    handle: () => {
-                        this.changeLocale();
-                    },
-                },
-            ],
+            handle: [],
         };
     },
     watch: {
@@ -146,15 +139,6 @@ export default {
                     this.autoSaveId = null;
                 }
             }, is.Number(s) ? s : 2000);
-        },
-        changeLocale() {
-            if (this.lang === 'cn') {
-                this.locale = En;
-                this.lang = 'en';
-            } else {
-                this.locale = ZhCn;
-                this.lang = 'cn';
-            }
         },
         load() {
             let val;
