@@ -1559,7 +1559,7 @@ export default defineComponent({
                 data.baseForm.isShow = permission.base !== false && input && rule.input !== false && methods.getConfig('showBaseForm') !== false;
                 data.propsForm.isShow = permission.props !== false && data.cacheProps[rule._fc_id].length > 0 && methods.getConfig('showPropsForm') !== false;
                 data.styleForm.isShow = false;
-                data.eventShow = permission.event !== false && rule._menu.event !== false && methods.getConfig('showEventForm') !== false;
+                data.eventShow = false;
                 const showValidateForm = methods.getConfig('showValidateForm');
                 data.validateForm.isShow = permission.validate !== false && ((data.baseForm.isShow && showValidateForm !== false) || showValidateForm === true) && rule._menu.validate !== false;
                 data.propsForm.rule = data.cacheProps[rule._fc_id];

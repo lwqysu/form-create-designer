@@ -5,11 +5,11 @@ export default function validate({t}) {
             field: '$required',
             title: t('validate.required')
         },
-        {
-            type: 'validate',
-            field: 'validate',
-            title: t('validate.rule'),
-            value: []
-        },
+        // {
+        //     type: 'validate',
+        //     field: 'validate',
+        //     title: t('validate.rule'),
+        //     value: []
+        // },
     ];
 }
