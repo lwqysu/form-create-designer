@@ -1,6 +1,7 @@
 import radio from './rule/radio';
 import checkbox from './rule/checkbox';
 import input from './rule/input';
+import fcInput from './rule/fcInput';
 import textarea from './rule/textarea';
 import password from './rule/password';
 import number from './rule/number';
@@ -44,7 +45,7 @@ import title from './rule/title';
 
 
 const ruleList = [
-    input, textarea, password, number, radio, checkbox, select, _switch, rate, time, timeRange, slider, date, dateRange, color, cascader, upload, transfer, tree, treeSelect, editor, signaturePad,
+    input, fcInput, textarea, password, number, radio, checkbox, select, _switch, rate, time, timeRange, slider, date, dateRange, color, cascader, upload, transfer, tree, treeSelect, editor, signaturePad,
     group, subForm, tableForm, tableFormColumn,
     alert, button, text, title, html, divider, tag, image,
     row, table, tabs, space, card, collapse,
