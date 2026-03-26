@@ -35,12 +35,14 @@ export default function form({t}) {
             style: {
                 width: '150px'
             }
-        }, {
-            type: 'SizeInput',
-            field: 'labelWidth',
-            value: '125px',
-            title: t('form.labelWidth'),
-        }, {
+        }, 
+        // {
+        //     type: 'SizeInput',
+        //     field: 'labelWidth',
+        //     value: '125px',
+        //     title: t('form.labelWidth'),
+        // }, 
+        {
             type: 'switch',
             field: 'hideRequiredAsterisk',
             value: false,

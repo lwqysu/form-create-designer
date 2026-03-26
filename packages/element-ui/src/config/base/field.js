@@ -11,17 +11,20 @@ export default function field({t}) {
             field: 'title',
             value: '',
             title: t('form.title'),
-        }, {
-            type: 'LanguageInput',
-            field: 'info',
-            value: '',
-            title: t('form.info'),
-        }, {
-            type: 'SizeInput',
-            field: 'formCreateWrap>labelWidth',
-            value: '',
-            title: t('form.labelWidth'),
-        }, {
+        }, 
+        // {
+        //     type: 'LanguageInput',
+        //     field: 'info',
+        //     value: '',
+        //     title: t('form.info'),
+        // }, 
+        // {
+        //     type: 'SizeInput',
+        //     field: 'formCreateWrap>labelWidth',
+        //     value: '',
+        //     title: t('form.labelWidth'),
+        // }, 
+        {
             type: 'Struct',
             field: '_control',
             name: 'control',

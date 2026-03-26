@@ -740,6 +740,415 @@ const ZhCn = {
                 isType: '内置验证器',
             }
         },
+        fcTextarea: {
+            name: 'fc-text-area',
+            event: {
+                focus: '获得焦点时触发',
+                change: '文本改变时触发',
+            },
+            props: {
+                disabled: '是否禁用',
+                maxlength: '文本最大长度',
+                placeholder: '占位符'
+            }
+        },
+        fcPassword: {
+            name: 'fc-password',
+            props: {
+                disabled: '是否禁用',
+                readonly: '是否只读',
+                maxlength: '最大输入长度',
+                placeholder: '输入框占位文本',
+                clearable: '是否显示清除按钮',
+                number: '密码个数',
+                symbol: '密码代替字符'
+            }
+        },
+        fcNumberInput: {
+            name: 'fc-number-input',
+            event: {
+                blur: '失去焦点时触发',
+                focus: '获得焦点时触发',
+                input: '文本改变时触发',
+                change: '文本改变时触发',
+            },
+            options: {
+                text: '文本',
+                password: '密码',
+                small: '小',
+                normal: '普通',
+                large: '大',
+            },
+            props: {
+                disabled: '是否禁用',
+                min: '最小值',
+                max: '最大值',
+                decimal: '保留小数位数',
+                step: '步长',
+                placeholder: '占位提示文字',
+                type: '文本框类型',
+                minLength: '文本最小长度',
+                maxLength: '文本最大长度',
+                size: '文本框尺寸',
+                align: '文本对齐方式'
+            }
+        },
+        fcRadio: {
+            name: 'fc-radio',
+            event: {
+                change: '绑定值变化时触发'
+            },
+            options: {
+                radio: '单选框',
+                button: '按钮'
+            },
+            props: {
+                label: 'label 文字',
+                disabled: '是否禁用',
+                type: '单选框类型'
+            }
+        },
+        fcCheckBox: {
+            name: 'fc-check-box',
+            event: {
+                change: '当绑定值变化时触发的事件'
+            },
+            props: {
+                disabled: '是否禁用',
+                min: '最小勾选数量',
+                max: '最大勾选数量',
+                label: '标题',
+                requisite: '是否为必选',
+                indeterminate: '是否半选',
+                position: 'label 位置'
+            }
+        },
+        fcSelect: {
+            name: 'fc-select',
+            event: {
+                focus: '获取焦点触发',
+                blur: '失去焦点触发',
+                change: '值改变触发',
+                'remove-tag': '多选模式下移除 tag 时触发',
+                clear: '点击清空按钮时触发',
+            },
+            props: {
+                readonly: '是否只读',
+                popoverTitle: '弹出提示标题',
+                popoverContent: '弹出提示内容',
+                label: '输入框说明',
+                disabled: '是否禁用',
+                visible: '是否可见',
+                requisite: '是否必输',
+                placeholder: '输入框中提示',
+                symbol: '必输标记',
+                position: 'label 位置',
+                isVmodelLabel: '选中的 value 值是否为 label',
+                backTrigger: '是否向上触发 blur 事件',
+                multiple: '是否多选',
+                clearable: '单选时是否可以清空选项',
+                collapseTags: '多选时是否将选中值按文字展示',
+                multipleLimit: '多选时最大选择数',
+                filterable: '是否可搜索',
+                valueMap: '键值映射',
+                maxLines: '显示条数',
+                promptInformation: '提示错误信息',
+                popoverType: '是否悬浮弹出',
+                paraFile: '下拉选项数据所在的json文件名',
+                listName: '下拉选项json文件中的key'
+            }
+        },
+        fcSwitch: {
+            name: 'fc-switch',
+            event: {
+                change: 'switch 状态发生变化时触发'
+            },
+            props: {
+                disabled: '是否禁用',
+                activeColor: '打开时背景色',
+                inactiveColor: '关闭时背景色',
+                activeValue: '打开时的值',
+                inactiveValue: '关闭时的值',
+                title: '标签文字',
+                inlineDesc: '标签下的描述性文字',
+                preventDefault: '阻止点击时自动设定值'
+            }
+        },
+        fcSlider: {
+            name: 'fc-slider',
+            event: {
+                change: '值改变时触发'
+            },
+            props: {
+                min: '最小值',
+                max: '最大值',
+                disabled: '是否禁用',
+                step: '步长',
+                showInput: '是否显示输入框',
+                showInputControls: '是否显示输入框控制按钮',
+                showBreakpoint: '是否显示间断点',
+                direction: '滑块方向',
+                length: '滑块长度',
+                showTooltip: '是否显示 tooltip',
+                formatTooltip: '格式化 tooltip message',
+                decimal: '变化时是否显示小数',
+                weight: '线条宽度'
+            }
+        },
+        fcDate: {
+            name: 'fc-date',
+            event: {
+                change: '用户确认选定的值时触发',
+                blur: '当 input 失去焦点时触发',
+                focus: '当 input 获得焦点时触发',
+                show: '弹窗显示时触发',
+                hide: '弹窗关闭时触发',
+            },
+            options: {
+                phone: '手机号',
+                amount: '金额',
+                account: '账号',
+                year: '年',
+                month: '月',
+                date: '日期',
+                daterange: '日期范围',
+            },
+            props: {
+                popoverType: '弹出提示类型',
+                popoverTitle: '弹出提示标题',
+                popoverContent: '弹出提示内容',
+                label: '输入框说明',
+                requisite: '是否必输',
+                disabled: '是否禁用',
+                symbol: '必输标记',
+                position: 'label 位置',
+                readonly: '是否只读',
+                placeholder: '输入框中提示',
+                backTrigger: '是否向上触发 blur 事件',
+                noinput: '不可输入但可以选择日期',
+                clearable: '是否显示清除按钮',
+                startPlaceholder: '开始日期占位内容',
+                endPlaceholder: '结束日期占位内容',
+                type: '显示类型',
+                format: '显示格式',
+                defaultTime: '范围选择默认时刻',
+                valueFormat: '绑定值格式'
+            }
+        },
+        fcTime: {
+            name: 'fc-time',
+            event: {
+                change: '用户确认选定的值时触发',
+                blur: '当 input 失去焦点时触发',
+                focus: '当 input 获得焦点时触发',
+            },
+            props: {
+                readonly: '完全只读',
+                disabled: '禁用',
+                clearable: '是否显示清除按钮',
+                placeholder: '非范围选择时的占位内容',
+                startPlaceholder: '范围选择开始时间占位内容',
+                endPlaceholder: '范围选择结束时间占位内容',
+                isRange: '是否为时间范围选择',
+                'pickerOptions>start': '开始时间',
+                'pickerOptions>end': '结束时间',
+                'pickerOptions>step': '间隔时间',
+                'pickerOptions>selectableRange': '可选时间段',
+                valueFormat: '绑定值格式',
+                defaultValue: '默认显示时间',
+                backTrigger: '焦点向上触发事件',
+                noinput: '用户不可输入',
+                label: '日期 label 名称'
+            }
+        },
+        fcRate: {
+            name: 'fc-rate',
+            event: {
+                change: '分值改变时触发'
+            },
+            props: {
+                max: '最大分值',
+                disabled: '是否为只读',
+                allowHalf: '是否允许半选',
+                voidIconClass: '未选中 icon 类名',
+                showScore: '是否显示当前分数',
+                colors: 'icon 颜色数组',
+                sign: '评级对应符号',
+                icons: 'icon 类名数组',
+                showText: '是否显示辅助文字',
+                texts: '辅助文字数组',
+                space: '间隙值'
+            }
+        },
+        fcCascader: {
+            name: 'fc-cascader',
+            event: {
+                'active-item-change': '父级选项变化时触发',
+                change: '值变化时触发',
+                show: '弹窗出现时触发',
+                hide: '弹窗关闭时触发',
+            },
+            props: {
+                readonly: '是否只读',
+                label: '输入框说明',
+                disabled: '是否禁用',
+                visible: '是否显示',
+                requisite: '是否必输',
+                placeholder: '输入框中提示',
+                symbol: '必输标记',
+                position: 'label 位置',
+                backTrigger: '是否向上触发 blur 事件',
+                props: '配置选项',
+                clearable: '是否支持清空选项',
+                filterable: '是否可搜索选项',
+                debounce: '搜索关键词去抖延迟',
+                changeOnSelect: '是否允许选择任意一级选项',
+                inlineDesc: '标题下的描述',
+                popoverType: '悬浮类类型',
+                popoverTitle: '悬浮类标题',
+                promptInformation: '错误提示',
+                popoverContent: '悬浮内容',
+                multiple: '是否多选',
+                title: '展示标题'
+            },
+            propsOpt: {
+                expandTrigger: '次级菜单展开方式',
+                value: '指定选项值字段',
+                label: '指定选项标签字段',
+                children: '指定子选项字段',
+                disabled: '指定禁用字段',
+                checked: '指定选中字段',
+                indeterminate: '指定半选字段'
+            }
+        },
+        fcTransfer: {
+            name: 'fc-transfer',
+            event: {
+                change: '右侧列表元素变化时触发'
+            },
+            props: {
+                filterable: '是否可搜索',
+                filterPlaceholder: '搜索框占位符',
+                titles: '自定义列表标题',
+                buttonTexts: '自定义按钮文案',
+                format: '列表顶部勾选状态文案',
+                noChecked: '未勾选文案',
+                hasChecked: '已勾选文案',
+                props: '数据源字段别名',
+                key: 'key 字段名',
+                label: 'label 字段名',
+                disabledField: 'disabled 字段名',
+                leftDefaultChecked: '左侧默认勾选项',
+                rightDefaultChecked: '右侧默认勾选项'
+            }
+        },
+        fcTree: {
+            name: 'fc-tree',
+            event: {
+                'node-click': '节点被点击时触发',
+                'node-contextmenu': '节点被右键点击时触发',
+                'check-change': '节点选中状态变化时触发',
+                'node-expand': '节点展开时触发',
+                'node-collapse': '节点关闭时触发',
+                'node-drag-start': '节点开始拖拽时触发',
+                'node-drag-enter': '拖拽进入其他节点时触发',
+                'node-drag-leave': '拖拽离开节点时触发',
+                'node-drag-over': '拖拽经过节点时触发',
+                'node-drag-end': '拖拽结束时触发',
+                'node-drop': '拖拽完成时触发',
+            },
+            props: {
+                emptyText: '内容为空时展示的文本',
+                props: '节点字段映射',
+                renderAfterExpand: '首次展开后再渲染子节点',
+                defaultExpandAll: '是否默认展开所有节点',
+                checkStrictly: '父子节点是否严格不关联',
+                accordion: '是否每次只打开一个同级树节点',
+                nodeKey: '唯一标识字段',
+                showCheckbox: '节点是否可被选择',
+                defaultExpandedKeys: '默认展开节点 key 数组',
+                defaultCheckedKeys: '默认勾选节点 key 数组',
+                lazy: '是否懒加载子节点',
+                draggable: '是否开启拖拽节点',
+                ids: '选中值集合',
+                folderBold: '目录是否加粗显示',
+                depthOpen: '初始化展开层级'
+            }
+        },
+        fcUpload: {
+            name: 'fc-upload',
+            event: {
+                'on-preview': '点击已上传文件链接时触发',
+                'on-remove': '移除文件时触发',
+                'on-success': '上传成功时触发',
+                'on-error': '上传失败时触发',
+                'on-progress': '上传过程中触发',
+                'on-change': '文件状态改变时触发',
+                'on-exceed': '文件超出个数限制时触发',
+            },
+            props: {
+                action: '上传地址',
+                headers: '上传请求头',
+                multiple: '是否支持多选文件',
+                data: '上传附带参数',
+                fileName: '上传文件字段名',
+                withCredentials: '支持发送 cookie 凭证信息',
+                showFileList: '是否显示文件列表',
+                drag: '是否启用拖拽上传',
+                accept: '接受上传的文件类型',
+                listType: '文件列表类型',
+                autoUpload: '选择文件后是否立即上传',
+                fileList: '上传文件列表',
+                disabled: '是否禁用',
+                limit: '最大允许上传个数'
+            }
+        },
+        fcText: {
+            name: 'fc-text',
+            options: {
+                justify: '两端对齐'
+            },
+            props: {
+                formCreateNative: '是否显示标题',
+                formCreateTitle: '标题',
+                formCreateChild: '内容',
+                align: '对齐方式'
+            }
+        },
+        fcTag: {
+            name: 'fc-tag',
+            options: {
+                medium: '中',
+                mini: '迷你'
+            },
+            event: {
+                close: '关闭 Tag 时触发'
+            },
+            props: {
+                formCreateChild: '标签内容',
+                type: '类型',
+                closable: '是否可关闭',
+                disableTransitions: '是否禁用渐变动画',
+                size: '尺寸',
+                backgroundColor: '背景色'
+            }
+        },
+        fcButton: {
+            name: 'fc-button',
+            event: {
+                click: '点击事件'
+            },
+            props: {
+                formCreateChild: '内容',
+                type: '类型',
+                plain: '是否朴素按钮',
+                loading: '是否加载中状态',
+                disabled: '是否禁用状态',
+                cornerRadius: '圆角大小',
+                throttleTime: '截流时间',
+                label: '按钮 label 文字'
+            }
+        },
         inputNumber: {
             name: '计数器',
             props: {

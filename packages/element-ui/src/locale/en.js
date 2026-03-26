@@ -746,6 +746,415 @@ const En = {
                 isType: 'Built-in validator',
             }
         },
+        fcTextarea: {
+            name: 'fc-text-area',
+            event: {
+                focus: 'Triggered when the textarea gains focus',
+                change: 'Triggered when the text changes',
+            },
+            props: {
+                disabled: 'Disabled',
+                maxlength: 'Maximum text length',
+                placeholder: 'Placeholder'
+            }
+        },
+        fcPassword: {
+            name: 'fc-password',
+            props: {
+                disabled: 'Disabled',
+                readonly: 'Readonly',
+                maxlength: 'Maximum input length',
+                placeholder: 'Placeholder',
+                clearable: 'Show clear button',
+                number: 'Password count',
+                symbol: 'Password mask symbol'
+            }
+        },
+        fcNumberInput: {
+            name: 'fc-number-input',
+            event: {
+                blur: 'Triggered when the input loses focus',
+                focus: 'Triggered when the input gains focus',
+                input: 'Triggered when the text changes',
+                change: 'Triggered when the text changes',
+            },
+            options: {
+                text: 'Text',
+                password: 'Password',
+                small: 'Small',
+                normal: 'Normal',
+                large: 'Large',
+            },
+            props: {
+                disabled: 'Disabled',
+                min: 'Minimum value',
+                max: 'Maximum value',
+                decimal: 'Decimal precision',
+                step: 'Step',
+                placeholder: 'Placeholder',
+                type: 'Input type',
+                minLength: 'Minimum text length',
+                maxLength: 'Maximum text length',
+                size: 'Input size',
+                align: 'Text align'
+            }
+        },
+        fcRadio: {
+            name: 'fc-radio',
+            event: {
+                change: 'Triggered when the bound value changes'
+            },
+            options: {
+                radio: 'Radio',
+                button: 'Button'
+            },
+            props: {
+                label: 'Label text',
+                disabled: 'Disabled',
+                type: 'Radio type'
+            }
+        },
+        fcCheckBox: {
+            name: 'fc-check-box',
+            event: {
+                change: 'Triggered when the bound value changes'
+            },
+            props: {
+                disabled: 'Disabled',
+                min: 'Minimum checked count',
+                max: 'Maximum checked count',
+                label: 'Title',
+                requisite: 'Required',
+                indeterminate: 'Indeterminate',
+                position: 'Label position'
+            }
+        },
+        fcSelect: {
+            name: 'fc-select',
+            event: {
+                focus: 'Triggered when focused',
+                blur: 'Triggered when blurred',
+                change: 'Triggered when value changes',
+                'remove-tag': 'Triggered when removing a tag in multi-select mode',
+                clear: 'Triggered when the clear button is clicked',
+            },
+            props: {
+                readonly: 'Readonly',
+                popoverTitle: 'Popover title',
+                popoverContent: 'Popover content',
+                label: 'Input label',
+                disabled: 'Disabled',
+                visible: 'Visible',
+                requisite: 'Required',
+                placeholder: 'Placeholder',
+                symbol: 'Required symbol',
+                position: 'Label position',
+                isVmodelLabel: 'Use label as selected value',
+                backTrigger: 'Bubble blur event upward',
+                multiple: 'Multiple',
+                clearable: 'Allow clearing in single-select mode',
+                collapseTags: 'Collapse tags in multi-select mode',
+                multipleLimit: 'Maximum number of selections',
+                filterable: 'Filterable',
+                valueMap: 'Value map',
+                maxLines: 'Visible option count',
+                promptInformation: 'Validation message',
+                popoverType: 'Enable popover',
+                paraFile: 'Options data file name',
+                listName: 'Options JSON key'
+            }
+        },
+        fcSwitch: {
+            name: 'fc-switch',
+            event: {
+                change: 'Triggered when switch state changes'
+            },
+            props: {
+                disabled: 'Disabled',
+                activeColor: 'Active background color',
+                inactiveColor: 'Inactive background color',
+                activeValue: 'Active value',
+                inactiveValue: 'Inactive value',
+                title: 'Label text',
+                inlineDesc: 'Inline description',
+                preventDefault: 'Prevent automatic value update on click'
+            }
+        },
+        fcSlider: {
+            name: 'fc-slider',
+            event: {
+                change: 'Triggered when value changes'
+            },
+            props: {
+                min: 'Minimum value',
+                max: 'Maximum value',
+                disabled: 'Disabled',
+                step: 'Step',
+                showInput: 'Show input box',
+                showInputControls: 'Show input controls',
+                showBreakpoint: 'Show stops',
+                direction: 'Direction',
+                length: 'Length',
+                showTooltip: 'Show tooltip',
+                formatTooltip: 'Format tooltip message',
+                decimal: 'Show decimal while changing',
+                weight: 'Track width'
+            }
+        },
+        fcDate: {
+            name: 'fc-date',
+            event: {
+                change: 'Triggered when the user confirms the selected value',
+                blur: 'Triggered when the input loses focus',
+                focus: 'Triggered when the input gains focus',
+                show: 'Triggered when the popup is shown',
+                hide: 'Triggered when the popup is hidden',
+            },
+            options: {
+                phone: 'Phone',
+                amount: 'Amount',
+                account: 'Account',
+                year: 'Year',
+                month: 'Month',
+                date: 'Date',
+                daterange: 'Date range',
+            },
+            props: {
+                popoverType: 'Popover type',
+                popoverTitle: 'Popover title',
+                popoverContent: 'Popover content',
+                label: 'Input label',
+                requisite: 'Required',
+                disabled: 'Disabled',
+                symbol: 'Required symbol',
+                position: 'Label position',
+                readonly: 'Readonly',
+                placeholder: 'Placeholder',
+                backTrigger: 'Bubble blur event upward',
+                noinput: 'Disallow typing but allow picking',
+                clearable: 'Show clear button',
+                startPlaceholder: 'Start placeholder',
+                endPlaceholder: 'End placeholder',
+                type: 'Display type',
+                format: 'Display format',
+                defaultTime: 'Default time for range selection',
+                valueFormat: 'Bound value format'
+            }
+        },
+        fcTime: {
+            name: 'fc-time',
+            event: {
+                change: 'Triggered when the user confirms the selected value',
+                blur: 'Triggered when the input loses focus',
+                focus: 'Triggered when the input gains focus',
+            },
+            props: {
+                readonly: 'Readonly',
+                disabled: 'Disabled',
+                clearable: 'Show clear button',
+                placeholder: 'Placeholder for non-range mode',
+                startPlaceholder: 'Start placeholder for range mode',
+                endPlaceholder: 'End placeholder for range mode',
+                isRange: 'Time range mode',
+                'pickerOptions>start': 'Start time',
+                'pickerOptions>end': 'End time',
+                'pickerOptions>step': 'Step time',
+                'pickerOptions>selectableRange': 'Selectable range',
+                valueFormat: 'Bound value format',
+                defaultValue: 'Default displayed time',
+                backTrigger: 'Bubble focus event upward',
+                noinput: 'User cannot type',
+                label: 'Date label'
+            }
+        },
+        fcRate: {
+            name: 'fc-rate',
+            event: {
+                change: 'Triggered when the score changes'
+            },
+            props: {
+                max: 'Maximum score',
+                disabled: 'Readonly',
+                allowHalf: 'Allow half selection',
+                voidIconClass: 'Unselected icon class',
+                showScore: 'Show current score',
+                colors: 'Icon color array',
+                sign: 'Rating sign',
+                icons: 'Icon class array',
+                showText: 'Show helper text',
+                texts: 'Helper text array',
+                space: 'Gap value'
+            }
+        },
+        fcCascader: {
+            name: 'fc-cascader',
+            event: {
+                'active-item-change': 'Triggered when parent option changes',
+                change: 'Triggered when value changes',
+                show: 'Triggered when popup opens',
+                hide: 'Triggered when popup closes',
+            },
+            props: {
+                readonly: 'Readonly',
+                label: 'Input label',
+                disabled: 'Disabled',
+                visible: 'Visible',
+                requisite: 'Required',
+                placeholder: 'Placeholder',
+                symbol: 'Required symbol',
+                position: 'Label position',
+                backTrigger: 'Bubble blur event upward',
+                props: 'Option config',
+                clearable: 'Allow clearing',
+                filterable: 'Filterable',
+                debounce: 'Search debounce delay',
+                changeOnSelect: 'Allow selecting any level',
+                inlineDesc: 'Description under title',
+                popoverType: 'Popover type',
+                popoverTitle: 'Popover title',
+                promptInformation: 'Validation message',
+                popoverContent: 'Popover content',
+                multiple: 'Multiple',
+                title: 'Display title'
+            },
+            propsOpt: {
+                expandTrigger: 'Expand trigger',
+                value: 'Value field',
+                label: 'Label field',
+                children: 'Children field',
+                disabled: 'Disabled field',
+                checked: 'Checked field',
+                indeterminate: 'Indeterminate field'
+            }
+        },
+        fcTransfer: {
+            name: 'fc-transfer',
+            event: {
+                change: 'Triggered when the right panel data changes'
+            },
+            props: {
+                filterable: 'Filterable',
+                filterPlaceholder: 'Filter placeholder',
+                titles: 'Custom list titles',
+                buttonTexts: 'Custom button texts',
+                format: 'Header checked-state text',
+                noChecked: 'No checked text',
+                hasChecked: 'Checked text',
+                props: 'Field aliases',
+                key: 'Key field name',
+                label: 'Label field name',
+                disabledField: 'Disabled field name',
+                leftDefaultChecked: 'Default checked on left',
+                rightDefaultChecked: 'Default checked on right'
+            }
+        },
+        fcTree: {
+            name: 'fc-tree',
+            event: {
+                'node-click': 'Triggered when a node is clicked',
+                'node-contextmenu': 'Triggered when a node is right-clicked',
+                'check-change': 'Triggered when the checked state changes',
+                'node-expand': 'Triggered when a node expands',
+                'node-collapse': 'Triggered when a node collapses',
+                'node-drag-start': 'Triggered when dragging starts',
+                'node-drag-enter': 'Triggered when dragging enters a node',
+                'node-drag-leave': 'Triggered when dragging leaves a node',
+                'node-drag-over': 'Triggered when dragging is over a node',
+                'node-drag-end': 'Triggered when dragging ends',
+                'node-drop': 'Triggered when drop succeeds',
+            },
+            props: {
+                emptyText: 'Text shown when empty',
+                props: 'Node field mapping',
+                renderAfterExpand: 'Render child nodes after first expand',
+                defaultExpandAll: 'Expand all by default',
+                checkStrictly: 'Whether parent and child are strictly unrelated',
+                accordion: 'Only one sibling expanded at a time',
+                nodeKey: 'Unique key field',
+                showCheckbox: 'Whether node can be selected',
+                defaultExpandedKeys: 'Default expanded node keys',
+                defaultCheckedKeys: 'Default checked node keys',
+                lazy: 'Lazy load child nodes',
+                draggable: 'Enable drag and drop',
+                ids: 'Selected ids',
+                folderBold: 'Bold folder labels',
+                depthOpen: 'Initial expanded depth'
+            }
+        },
+        fcUpload: {
+            name: 'fc-upload',
+            event: {
+                'on-preview': 'Triggered when clicking an uploaded file link',
+                'on-remove': 'Triggered when removing a file',
+                'on-success': 'Triggered when upload succeeds',
+                'on-error': 'Triggered when upload fails',
+                'on-progress': 'Triggered during upload',
+                'on-change': 'Triggered when file status changes',
+                'on-exceed': 'Triggered when file count exceeds the limit',
+            },
+            props: {
+                action: 'Upload URL',
+                headers: 'Upload request headers',
+                multiple: 'Allow multiple file selection',
+                data: 'Extra upload params',
+                fileName: 'Upload file field name',
+                withCredentials: 'Send cookie credentials',
+                showFileList: 'Show uploaded file list',
+                drag: 'Enable drag upload',
+                accept: 'Accepted file types',
+                listType: 'File list type',
+                autoUpload: 'Upload immediately after selection',
+                fileList: 'Uploaded file list',
+                disabled: 'Disabled',
+                limit: 'Maximum upload count'
+            }
+        },
+        fcText: {
+            name: 'fc-text',
+            options: {
+                justify: 'Justify'
+            },
+            props: {
+                formCreateNative: 'Whether to display title',
+                formCreateTitle: 'Title',
+                formCreateChild: 'Content',
+                align: 'Align'
+            }
+        },
+        fcTag: {
+            name: 'fc-tag',
+            options: {
+                medium: 'Medium',
+                mini: 'Mini'
+            },
+            event: {
+                close: 'Triggered when the tag is closed'
+            },
+            props: {
+                formCreateChild: 'Tag content',
+                type: 'Type',
+                closable: 'Closable',
+                disableTransitions: 'Disable transitions',
+                size: 'Size',
+                backgroundColor: 'Background color'
+            }
+        },
+        fcButton: {
+            name: 'fc-button',
+            event: {
+                click: 'Click event'
+            },
+            props: {
+                formCreateChild: 'Content',
+                type: 'Type',
+                plain: 'Plain button',
+                loading: 'Loading state',
+                disabled: 'Disabled state',
+                cornerRadius: 'Corner radius',
+                throttleTime: 'Throttle time',
+                label: 'Button label text'
+            }
+        },
         inputNumber: {
             name: 'InputNumber',
             props: {

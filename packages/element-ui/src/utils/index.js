@@ -83,6 +83,18 @@ export function makeOptionsRule(t, to) {
     };
 }
 
+export function makeStaticOptionsRule(t, to) {
+    return {
+        type: 'TableOptions',
+        title: t('props.options'),
+        field: 'formCreate' + upper(to).replace('.', '>'),
+        props: {
+            column: [{label: t('props.key'), key: 'label'}, {value: true, label: t('props.value'), key: 'value'}],
+            keyValue: 'label'
+        }
+    };
+}
+
 export function makeTreeOptionsRule(t, to, label, value) {
     const options = [
         {'label': t('fetch.optionsType.struct'), 'value': 2},

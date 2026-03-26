@@ -1545,9 +1545,7 @@ export default defineComponent({
                         }
                     })
                     data.propsForm.api.hidden(true, hiddenField);
-                    if (!methods.getConfig('showControl', true)) {
-                        data.baseForm.api.hidden(true, '_control');
-                    }
+                    data.baseForm.api.hidden(true, '_control');
                 });
                 if (disabledField.length) {
                     data.baseForm.api.disabled(true, disabledField);
@@ -1597,7 +1595,7 @@ export default defineComponent({
                 const rule = data.activeRule;
                 let formData = {
                     formCreateChild: '' + rule.children[0],
-                    'formCreateWrap>labelWidth': ''
+                    // 'formCreateWrap>labelWidth': ''
                 };
                 const appendConfigData = configRef.value.appendConfigData;
                 if (is.Function(appendConfigData)) {

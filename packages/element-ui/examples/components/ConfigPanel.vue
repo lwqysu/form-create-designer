@@ -251,11 +251,6 @@ export default defineComponent({
                             img: 'https://view.form-create.com/img/showBaseForm.png'
                         },
                         {
-                            label: '组件联动配置',
-                            value: 'showControl',
-                            img: 'https://view.form-create.com/img/showControl.png'
-                        },
-                        {
                             label: '组件自定义属性按钮',
                             value: 'showCustomProps',
                             img: 'https://view.form-create.com/img/version-541-1.png'
@@ -312,7 +307,7 @@ export default defineComponent({
                 showPageManage: true,
                 showComponentName: true,
                 showBaseForm: true,
-                showControl: true,
+                showControl: false,
                 showAdvancedForm: true,
                 showPropsForm: true,
                 showStyleForm: false,
