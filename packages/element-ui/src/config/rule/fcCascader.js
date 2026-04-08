@@ -1,5 +1,5 @@
 import uniqueId from '@form-create/utils/lib/unique';
-import {localeOptions, localeProps, makeTreeOptions, makeTreeOptionsRule} from '../../utils/index';
+import {localeOptions, localeProps, makeTreeOptions, makeStaticOptionsRule} from '../../utils/index';
 import {createFieldLoad, createFieldWatch, mergePropsRule} from './fcUtils';
 
 const label = 'FC级联选择';
@@ -11,7 +11,7 @@ export default {
     label,
     name,
     input: true,
-    event: ['active-item-change', 'change', 'show', 'hide'],
+    // event: ['active-item-change', 'change', 'show', 'hide'],
     validate: false,
     hiddenBaseField: ['info', 'formCreateWrap>labelWidth', '_control'],
     rule({t}) {
@@ -25,7 +25,7 @@ export default {
             },
             $required: false,
             props: {
-                visible: true,
+                // visible: true,
                 requisite: false,
                 symbol: '*',
                 position: 'left',
@@ -70,7 +70,7 @@ export default {
     }),
     props(_, {t}) {
         const nativeRule = localeProps(t, name + '.props', [
-            makeTreeOptionsRule(t, 'props.options'),
+            makeStaticOptionsRule(t, 'props.options'),
             {
                 type: 'switch',
                 field: 'disabled'

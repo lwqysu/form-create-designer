@@ -243,11 +243,11 @@
                                         </template>
                                     </el-input>
                                 </template>
-                                <template v-if="activeRule">
+                                <!-- <template v-if="activeRule">
                                     <ConfigItem :label="t('props.hide')">
                                         <el-switch size="small" :modelValue="activeRule._hidden" @update:modelValue="toolHidden(activeRule)"></el-switch>
                                     </ConfigItem>
-                                </template>
+                                </template> -->
                             </template>
                             <div class="_fc-r-config" :style="{'grid-template-areas': configFormOrderStyle}">
                                 <div style="grid-area: base;">

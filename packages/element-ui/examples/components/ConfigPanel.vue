@@ -216,11 +216,11 @@ export default defineComponent({
                             value: 'nameReadonly',
                             img: 'https://pro.form-create.com/doc/img/custom-name.png'
                         },
-                        {
-                            label: '隐藏组件操作按钮',
-                            value: 'hiddenDragMenu',
-                            img: 'https://view.form-create.com/img/hiddenDragMenu.png'
-                        },
+                        // {
+                        //     label: '隐藏组件操作按钮',
+                        //     value: 'hiddenDragMenu',
+                        //     img: 'https://view.form-create.com/img/hiddenDragMenu.png'
+                        // },
                         {
                             label: '隐藏组件拖拽',
                             value: 'hiddenDragBtn',
