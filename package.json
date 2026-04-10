@@ -20,6 +20,10 @@
         "url": "https://github.com/xaboy/form-create-designer/issues"
     },
     "homepage": "https://form-create.com",
+    "dependencies": {
+        "fc-aui-web": "^1.1.29",
+        "@agree/aui-web": "1.7.36"
+    },
     "devDependencies": {
         "@sixian/css-url": "^1.0.3",
         "@types/chalk": "^2.2.0",

@@ -793,6 +793,19 @@ const ZhCn = {
                 align: '文本对齐方式'
             }
         },
+        fcCounter: {
+            name: 'fc-counter',
+            event: {
+                change: '绑定值被改变时触发'
+            },
+            props: {
+                min: '设置计数器允许的最小值',
+                max: '设置计数器允许的最大值',
+                step: '计数器步长',
+                disabled: '是否禁用计数器',
+                label: 'label 文字'
+            }
+        },
         fcRadio: {
             name: 'fc-radio',
             event: {
@@ -1390,4 +1403,3 @@ const ZhCn = {
 };
 
 export default ZhCn;
-

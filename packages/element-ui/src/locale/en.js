@@ -799,6 +799,19 @@ const En = {
                 align: 'Text align'
             }
         },
+        fcCounter: {
+            name: 'fc-counter',
+            event: {
+                change: 'Triggered when the bound value changes'
+            },
+            props: {
+                min: 'Set the minimum value allowed for the counter',
+                max: 'Set the maximum allowed value of the counter',
+                step: 'Step',
+                disabled: 'Disabled',
+                label: 'Label text'
+            }
+        },
         fcRadio: {
             name: 'fc-radio',
             event: {
@@ -1395,4 +1408,3 @@ const En = {
 };
 
 export default En;
-

@@ -21,6 +21,7 @@ import TableFormView from './components/tableForm/TableFormView.vue';
 import TableForm from './components/tableForm/TableForm.vue';
 import SignaturePad from './components/SignaturePad.vue';
 import FcTitle from './components/FcTitle.vue';
+import FcCounterPreview from './components/FcCounterPreview.vue';
 import TableFormColumnView from './components/tableForm/TableFormColumnView.vue';
 import SizeInput from './components/style/SizeInput.vue';
 import ColorInput from './components/style/ColorInput.vue';
@@ -82,6 +83,7 @@ addComponent('FcTitle', FcTitle);
 addComponent('SignaturePad', SignaturePad);
 addComponent('TableForm', TableForm, TableFormView);
 addComponent('FcTable', Table, TableView);
+designerForm.component('fcCounter', FcCounterPreview);
 
 const install = function (Vue) {
     Vue.component('FcDesigner', FcDesigner);

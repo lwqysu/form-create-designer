@@ -1,5 +1,5 @@
 import uniqueId from '@form-create/utils/lib/unique';
-import {localeProps, makeTreeOptions, makeTreeOptionsRule} from '../../utils';
+import {localeProps, makeTreeOptions, makeStaticOptionsRule} from '../../utils';
 
 const label = 'FC穿梭框';
 const name = 'fcTransfer';
@@ -26,7 +26,7 @@ export default {
     },
     props(_, {t}) {
         const nativeRule = localeProps(t, name + '.props', [
-            makeTreeOptionsRule(t, 'props.data', 'label', 'key'),
+            makeStaticOptionsRule(t, 'props.data', 'label', 'key'),
             {
                 type: 'switch',
                 field: 'filterable'
