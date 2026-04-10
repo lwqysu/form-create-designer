@@ -54,6 +54,7 @@ import collapseItem from './rule/collapseItem';
 import treeSelect from './rule/treeSelect';
 import tag from './rule/tag';
 import fcTag from './rule/fcTag';
+import fcInputTag from './rule/fcInputTag';
 import html from './rule/html';
 import table from './rule/table';
 import tableForm from './rule/tableForm';
@@ -87,7 +88,7 @@ const ruleList = [
     button, fcButton,
     text, fcText,
     title, html, divider,
-    tag, fcTag,
+    tag, fcTag, fcInputTag,
     image,
     row, table, tabs, space, card, collapse,
     col, tabPane, collapseItem,

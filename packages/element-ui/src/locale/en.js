@@ -812,6 +812,36 @@ const En = {
                 label: 'Label text'
             }
         },
+        fcInputTag: {
+            name: 'FC Input Tag',
+            event: {
+                change: 'Triggered when the bound value changes'
+            },
+            props: {
+                placeholder: 'Placeholder text',
+                disabled: 'Disabled',
+                clearable: 'Clearable',
+                max: 'Max tag count',
+                min: 'Min tag count',
+                separator: 'Tag separator',
+                tagType: 'Tag type',
+                tagEffect: 'Tag effect',
+                trigger: 'Trigger key',
+                draggable: 'Draggable',
+                size: 'Input size',
+                validateEvent: 'Validate event',
+                readonly: 'Readonly',
+                autofocus: 'Autofocus',
+                id: 'Element ID',
+                tabindex: 'Tab index',
+                maxlength: 'Max input length',
+                minlength: 'Min input length',
+                autocomplete: 'Autocomplete',
+                ariaLabel: 'ARIA label',
+                label: 'Label text',
+                visible: 'Visible'
+            }
+        },
         fcRadio: {
             name: 'fc-radio',
             event: {

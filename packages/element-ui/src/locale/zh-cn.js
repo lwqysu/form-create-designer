@@ -806,6 +806,36 @@ const ZhCn = {
                 label: 'label 文字'
             }
         },
+        fcInputTag: {
+            name: 'FC标签输入',
+            event: {
+                change: '绑定值被改变时触发'
+            },
+            props: {
+                placeholder: '输入框占位文本',
+                disabled: '是否禁用',
+                clearable: '是否可清空',
+                max: '最大标签数',
+                min: '最小标签数',
+                separator: '标签分隔符',
+                tagType: '标签类型',
+                tagEffect: '标签效果',
+                trigger: '触发输入标签的按键',
+                draggable: '是否可以拖动标签',
+                size: '输入框尺寸',
+                validateEvent: '是否触发表单验证',
+                readonly: '是否只读',
+                autofocus: '是否自动聚焦',
+                id: '元素ID',
+                tabindex: 'Tab键顺序',
+                maxlength: '最大输入长度',
+                minlength: '最小输入长度',
+                autocomplete: '自动完成',
+                ariaLabel: '无障碍标签',
+                label: 'label 文字',
+                visible: '是否可见'
+            }
+        },
         fcRadio: {
             name: 'fc-radio',
             event: {
