@@ -10,7 +10,6 @@ import password from './rule/password';
 import fcPassword from './rule/fcPassword';
 import number from './rule/number';
 import fcNumberInput from './rule/fcNumberInput';
-import fcCounter from './rule/fcCounter';
 import select from './rule/select';
 import fcSelect from './rule/fcSelect';
 import _switch from './rule/switch';
@@ -67,7 +66,7 @@ const ruleList = [
     input, fcInput,
     textarea, fcTextarea,
     password, fcPassword,
-    number, fcNumberInput, fcCounter,
+    number, fcNumberInput,
     radio, fcRadio,
     checkbox, fcCheckBox,
     select, fcSelect,

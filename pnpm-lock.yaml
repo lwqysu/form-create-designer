@@ -156,9 +156,12 @@ importers:
       '@agree/ab-plugin-file':
         specifier: ^6.2.0
         version: 6.2.0
+      '@agree/aui-plus':
+        specifier: 6.2.1
+        version: 6.2.1(typescript@4.9.5)(vue@3.5.18(typescript@4.9.5))
       '@agree/aui-web':
-        specifier: 1.7.75-HeiLongJiangNongXin-Teller.9
-        version: 1.7.75-HeiLongJiangNongXin-Teller.9(@agree/ab-core-util@6.2.0)(@agree/ab-core@6.2.0)(@agree/ab-manager-auf@6.2.4(pinia@2.3.1(typescript@4.9.5)(vue@3.5.18(typescript@4.9.5)))(typescript@4.9.5))(@agree/ab-manager-eventbus@6.2.0)(@agree/ab-manager-focus2@2.1.22(@agree/ab-core-util@6.2.0)(@agree/ab-core@6.2.0))(echarts@5.6.0)
+        specifier: 1.7.36
+        version: 1.7.36(@agree/ab-manager-auf@6.2.4(pinia@2.3.1(typescript@4.9.5)(vue@3.5.18(typescript@4.9.5)))(typescript@4.9.5))(@agree/ab-manager-eventbus@6.2.0)(@agree/ab-manager-focus2@2.1.22(@agree/ab-core-util@6.2.0)(@agree/ab-core@6.2.0))(echarts@5.6.0)
       '@form-create/component-wangeditor':
         specifier: ^3.2.14
         version: 3.2.14
@@ -171,6 +174,9 @@ importers:
       agree-public-client:
         specifier: ^2.0.16
         version: 2.0.16
+      aui-web:
+        specifier: link:@agree/aui-plus/es/aui-web
+        version: link:@agree/aui-plus/es/aui-web
       axios:
         specifier: ^1.15.0
         version: 1.15.0
@@ -183,6 +189,9 @@ importers:
       fc-aui-web:
         specifier: ^1.1.9
         version: 1.1.9
+      index.css:
+        specifier: link:@agree/aui-plus/aui-web/theme-chalk/index.css
+        version: link:@agree/aui-plus/aui-web/theme-chalk/index.css
       js-beautify:
         specifier: ^1.15.1
         version: 1.15.4
@@ -254,12 +263,6 @@ packages:
   '@agree/ab-core@6.2.0':
     resolution: {integrity: sha512-AbKwClmUS+0c7BBqdDDdP3TVyoyhxpmIMMoSE/hhIif52agMIFsnA2aaBwLlyq00iIoLbTrFUgVHIm7/4vgD7g==, tarball: http://10.8.4.158:8081/repository/npm-group/@agree/ab-core/-/ab-core-6.2.0.tgz}
 
-  '@agree/ab-logger@2.0.12':
-    resolution: {integrity: sha1-/S/qBNzXFhkWW6oLjzysfSzaDCI=, tarball: http://10.8.4.158:8081/repository/npm-group/@agree/ab-logger/-/ab-logger-2.0.12.tgz}
-    peerDependencies:
-      '@agree/ab-core': '>=2.0.0'
-      '@agree/ab-core-util': '>=2.0.0'
-
   '@agree/ab-logger@2.0.19':
     resolution: {integrity: sha1-OFDhMGwkoQ3ojHiApGDFxRcpVOg=, tarball: http://10.8.4.158:8081/repository/npm-group/@agree/ab-logger/-/ab-logger-2.0.19.tgz}
     peerDependencies:
@@ -301,8 +304,14 @@ packages:
   '@agree/ab-manager-page-message@6.2.0':
     resolution: {integrity: sha512-M89RZnXdI1C2vfk3yIQqGCrtV2Mjfu7J7nyC0c0CbqDiP0lbyy2Lwm2PoPULxDc9qEhA2PFRf5YyCNfeeFDNoA==, tarball: http://10.8.4.158:8081/repository/npm-group/@agree/ab-manager-page-message/-/ab-manager-page-message-6.2.0.tgz}
 
+  '@agree/ab-manager-picture@6.2.0':
+    resolution: {integrity: sha512-tuEjntE+l0opz9tm7ANZ/m4V+9jOwnhDmxFNKMcfUP7gmmmm4zJY7Kp5X+sX9q6NptbaR0RPKejQM7od1ED9tg==, tarball: http://10.8.4.158:8081/repository/npm-group/@agree/ab-manager-picture/-/ab-manager-picture-6.2.0.tgz}
+
   '@agree/ab-manager-trade@6.2.5':
     resolution: {integrity: sha512-cs6Oc6hsrBr0chiDbUUibBXfrBV05p9PS6Fy1iA4dslw2ckE9WE6b6qHBo+mTEGQm2EDmw7vOTEOp3BBBKI2gQ==, tarball: http://10.8.4.158:8081/repository/npm-group/@agree/ab-manager-trade/-/ab-manager-trade-6.2.5.tgz}
+
+  '@agree/ab-manager-validator@6.2.0':
+    resolution: {integrity: sha512-ubQnSd9ue8BWsDtJUTlAkuQhoI5jEyRgi/G821gQSTZ9VxeTS0cWQSAEgGpXqiQt8Ohn5FOpDo7avwT0JcyqyQ==, tarball: http://10.8.4.158:8081/repository/npm-group/@agree/ab-manager-validator/-/ab-manager-validator-6.2.0.tgz}
 
   '@agree/ab-plugin-file@6.2.0':
     resolution: {integrity: sha512-6ouUCMsq0BXJglC5pVg0YG7afhCIM7h9AaJqTsO9ebO0TvsJsCD3Vftqozu0dqhPFYG7jZdtW/j+s7u6BhH06A==, tarball: http://10.8.4.158:8081/repository/npm-group/@agree/ab-plugin-file/-/ab-plugin-file-6.2.0.tgz}
@@ -313,6 +322,11 @@ packages:
   '@agree/ab-shared@6.2.3':
     resolution: {integrity: sha512-61c0aumz46E+XoD+1h1Zxw2UDjMHYKRBvMdwnWCtZnQZMDSNEQOYMtZmcmEjU4wo3zA+p5iOyU4El3TksFrVeg==, tarball: http://10.8.4.158:8081/repository/npm-group/@agree/ab-shared/-/ab-shared-6.2.3.tgz}
 
+  '@agree/aui-plus@6.2.1':
+    resolution: {integrity: sha512-ZVnLTfjCXcUkNMKls91loO2S0sqdJqcZmrO5xNJ3jfd2e21R6r4GxgIAS5Jk6U1D+xnazT3HZJpqsxfJ1A1Dsw==, tarball: http://10.8.4.158:8081/repository/npm-group/@agree/aui-plus/-/aui-plus-6.2.1.tgz}
+    peerDependencies:
+      vue: 3.5.18
+
   '@agree/aui-web@1.7.36':
     resolution: {integrity: sha1-Ju9eHEUsZSWKxOxEuSz5nE8kuck=, tarball: http://10.8.4.158:8081/repository/npm-group/@agree/aui-web/-/aui-web-1.7.36.tgz}
     peerDependencies:
@@ -321,13 +335,10 @@ packages:
       '@agree/ab-manager-focus2': ^2.1.0
       echarts: ^5.0.0
 
-  '@agree/aui-web@1.7.75-HeiLongJiangNongXin-Teller.9':
-    resolution: {integrity: sha1-Cjtq6I7haTceLMrBYeS+JLEFonM=, tarball: http://10.8.4.158:8081/repository/npm-group/@agree/aui-web/-/aui-web-1.7.75-HeiLongJiangNongXin-Teller.9.tgz}
+  '@agree/icons-vue@6.2.0':
+    resolution: {integrity: sha512-sLw1yjxDrX6TRaSS/bM8WcsEgWzjTEsqel4lceZlzqqDTBNPwVlFLAzZObky2QhfeBH7kE59nEZvmgoT+OwqTw==, tarball: http://10.8.4.158:8081/repository/npm-group/@agree/icons-vue/-/icons-vue-6.2.0.tgz}
     peerDependencies:
-      '@agree/ab-manager-auf': '>=2.0.0'
-      '@agree/ab-manager-eventbus': '>=2.0.0'
-      '@agree/ab-manager-focus2': ^2.1.0
-      echarts: ^5.0.0
+      vue: 3.5.18
 
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
@@ -1140,6 +1151,9 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==, tarball: http://10.8.4.158:8081/repository/npm-group/@pkgjs/parseargs/-/parseargs-0.11.0.tgz}
     engines: {node: '>=14'}
+
+  '@popperjs/core@2.11.8':
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==, tarball: http://10.8.4.158:8081/repository/npm-group/@popperjs/core/-/core-2.11.8.tgz}
 
   '@sixian/css-url@1.0.3':
     resolution: {integrity: sha512-yTZpmjC5rFb/3uvBuMvpZLF586bmf5vLH9QO4kP1j4v34cJradIRUy/mAaMet82aAVlo5vy1/bwyBY20wHRj0A==}
@@ -5367,6 +5381,9 @@ packages:
     resolution: {integrity: sha512-MnUuEycAemtSaeFSjXKW/aroV7akBbY+Sv+RkyqFjgAe73F+MR0TBWKBRDkmfWq/HiFmdavfZ1G7h4SPZXaCSg==}
     engines: {node: '>=0.10.0'}
 
+  pinyin-engine@1.2.2:
+    resolution: {integrity: sha512-fm9uDeqAEaVMY1sII7BdLPM8exf8uD4SGe8n5dP8qEOQfJwbtz35zT2RjBHK8AehE5JSr/zBuX91bCSEYkmtrA==, tarball: http://10.8.4.158:8081/repository/npm-group/pinyin-engine/-/pinyin-engine-1.2.2.tgz}
+
   pkg-dir@3.0.0:
     resolution: {integrity: sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==}
     engines: {node: '>=6'}
@@ -5758,6 +5775,9 @@ packages:
   pretty-hrtime@1.0.3:
     resolution: {integrity: sha512-66hKPCr+72mlfiSjlEB1+45IjXSqvVAIy6mocupoww4tBFE9R9IhwwUGoI4G++Tc9Aq+2rxOt0RFU6gPcrte0A==}
     engines: {node: '>= 0.8'}
+
+  prism-theme-vars@0.2.5:
+    resolution: {integrity: sha512-/D8gBTScYzi9afwE6v3TC1U/1YFZ6k+ly17mtVRdLpGy7E79YjJJWkXFgUDHJ2gDksV/ZnXF7ydJ4TvoDm2z/Q==, tarball: http://10.8.4.158:8081/repository/npm-group/prism-theme-vars/-/prism-theme-vars-0.2.5.tgz}
 
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
@@ -7015,6 +7035,11 @@ packages:
       vue:
         optional: true
 
+  vue-router@4.6.4:
+    resolution: {integrity: sha512-Hz9q5sa33Yhduglwz6g9skT8OBPii+4bFn88w6J+J4MfEo4KRRpmiNG/hHHkdbRFlLBOqxN8y8gf2Fb0MTUgVg==, tarball: http://10.8.4.158:8081/repository/npm-group/vue-router/-/vue-router-4.6.4.tgz}
+    peerDependencies:
+      vue: ^3.5.0
+
   vue-style-loader@4.1.3:
     resolution: {integrity: sha512-sFuh0xfbtpRlKfm39ss/ikqs9AbKCoXZBpHeVZ8Tx650o0k0q/YCM7FRvigtxpACezfq6af+a7JeqVTWvncqDg==}
 
@@ -7273,11 +7298,6 @@ snapshots:
       js-base64: 3.7.7
       pubsub-js: 1.9.5
 
-  '@agree/ab-logger@2.0.12(@agree/ab-core-util@6.2.0)(@agree/ab-core@6.2.0)':
-    dependencies:
-      '@agree/ab-core': 6.2.0
-      '@agree/ab-core-util': 6.2.0
-
   '@agree/ab-logger@2.0.19(@agree/ab-core-util@6.2.0)(@agree/ab-core@6.2.0)':
     dependencies:
       '@agree/ab-core': 6.2.0
@@ -7370,6 +7390,10 @@ snapshots:
 
   '@agree/ab-manager-page-message@6.2.0': {}
 
+  '@agree/ab-manager-picture@6.2.0':
+    dependencies:
+      '@agree/ab-logger': 6.2.0
+
   '@agree/ab-manager-trade@6.2.5(pinia@2.3.1(typescript@4.9.5)(vue@3.5.11(typescript@4.9.5)))(typescript@4.9.5)':
     dependencies:
       '@agree/ab-logger': 6.2.0
@@ -7406,6 +7430,13 @@ snapshots:
       - pinia
       - typescript
 
+  '@agree/ab-manager-validator@6.2.0(typescript@4.9.5)':
+    dependencies:
+      '@agree/ab-logger': 6.2.0
+      vue: 3.5.18(typescript@4.9.5)
+    transitivePeerDependencies:
+      - typescript
+
   '@agree/ab-plugin-file@6.2.0':
     dependencies:
       '@agree/ab-core': 6.2.0
@@ -7424,6 +7455,32 @@ snapshots:
       - '@vue/composition-api'
       - typescript
 
+  '@agree/aui-plus@6.2.1(typescript@4.9.5)(vue@3.5.18(typescript@4.9.5))':
+    dependencies:
+      '@agree/ab-core-util': 6.2.0
+      '@agree/ab-manager-eventbus': 6.2.0
+      '@agree/ab-manager-hotkey': 6.2.1(typescript@4.9.5)
+      '@agree/ab-manager-picture': 6.2.0
+      '@agree/ab-manager-validator': 6.2.0(typescript@4.9.5)
+      '@agree/icons-vue': 6.2.0(vue@3.5.18(typescript@4.9.5))
+      '@ctrl/tinycolor': 3.6.1
+      '@floating-ui/dom': 1.6.13
+      '@popperjs/core': 2.11.8
+      '@types/lodash-es': 4.17.12
+      '@vueuse/core': 12.0.0(typescript@4.9.5)
+      async-validator: 4.2.5
+      dayjs: 1.11.13
+      lodash: 4.17.21
+      lodash-es: 4.17.21
+      lodash-unified: 1.0.3(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
+      memoize-one: 6.0.0
+      pinyin-engine: 1.2.2
+      prism-theme-vars: 0.2.5
+      vue: 3.5.18(typescript@4.9.5)
+      vue-router: 4.6.4(vue@3.5.18(typescript@4.9.5))
+    transitivePeerDependencies:
+      - typescript
+
   '@agree/aui-web@1.7.36(@agree/ab-manager-auf@6.2.4(pinia@2.3.1(typescript@4.9.5)(vue@3.5.11(typescript@4.9.5)))(typescript@4.9.5))(@agree/ab-manager-eventbus@6.2.0)(@agree/ab-manager-focus2@2.1.22(@agree/ab-core-util@6.2.0)(@agree/ab-core@6.2.0))(echarts@5.6.0)':
     dependencies:
       '@agree/ab-manager-auf': 6.2.4(pinia@2.3.1(typescript@4.9.5)(vue@3.5.11(typescript@4.9.5)))(typescript@4.9.5)
@@ -7432,17 +7489,17 @@ snapshots:
       echarts: 5.6.0
       vue: 2.6.14
 
-  '@agree/aui-web@1.7.75-HeiLongJiangNongXin-Teller.9(@agree/ab-core-util@6.2.0)(@agree/ab-core@6.2.0)(@agree/ab-manager-auf@6.2.4(pinia@2.3.1(typescript@4.9.5)(vue@3.5.18(typescript@4.9.5)))(typescript@4.9.5))(@agree/ab-manager-eventbus@6.2.0)(@agree/ab-manager-focus2@2.1.22(@agree/ab-core-util@6.2.0)(@agree/ab-core@6.2.0))(echarts@5.6.0)':
+  '@agree/aui-web@1.7.36(@agree/ab-manager-auf@6.2.4(pinia@2.3.1(typescript@4.9.5)(vue@3.5.18(typescript@4.9.5)))(typescript@4.9.5))(@agree/ab-manager-eventbus@6.2.0)(@agree/ab-manager-focus2@2.1.22(@agree/ab-core-util@6.2.0)(@agree/ab-core@6.2.0))(echarts@5.6.0)':
     dependencies:
-      '@agree/ab-logger': 2.0.12(@agree/ab-core-util@6.2.0)(@agree/ab-core@6.2.0)
       '@agree/ab-manager-auf': 6.2.4(pinia@2.3.1(typescript@4.9.5)(vue@3.5.18(typescript@4.9.5)))(typescript@4.9.5)
       '@agree/ab-manager-eventbus': 6.2.0
       '@agree/ab-manager-focus2': 2.1.22(@agree/ab-core-util@6.2.0)(@agree/ab-core@6.2.0)
       echarts: 5.6.0
       vue: 2.6.14
-    transitivePeerDependencies:
-      - '@agree/ab-core'
-      - '@agree/ab-core-util'
+
+  '@agree/icons-vue@6.2.0(vue@3.5.18(typescript@4.9.5))':
+    dependencies:
+      vue: 3.5.18(typescript@4.9.5)
 
   '@ampproject/remapping@2.3.0':
     dependencies:
@@ -8475,6 +8532,8 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@popperjs/core@2.11.8': {}
 
   '@sixian/css-url@1.0.3':
     dependencies:
@@ -13644,6 +13703,8 @@ snapshots:
 
   pinkie@2.0.4: {}
 
+  pinyin-engine@1.2.2: {}
+
   pkg-dir@3.0.0:
     dependencies:
       find-up: 3.0.0
@@ -14089,6 +14150,8 @@ snapshots:
       renderkid: 2.0.7
 
   pretty-hrtime@1.0.3: {}
+
+  prism-theme-vars@0.2.5: {}
 
   process-nextick-args@2.0.1: {}
 
@@ -15579,6 +15642,11 @@ snapshots:
       '@vue/compiler-sfc': 3.5.11
       vue: 3.5.18(typescript@4.9.5)
     optional: true
+
+  vue-router@4.6.4(vue@3.5.18(typescript@4.9.5)):
+    dependencies:
+      '@vue/devtools-api': 6.6.4
+      vue: 3.5.18(typescript@4.9.5)
 
   vue-style-loader@4.1.3:
     dependencies:

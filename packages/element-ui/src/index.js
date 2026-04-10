@@ -21,7 +21,6 @@ import TableFormView from './components/tableForm/TableFormView.vue';
 import TableForm from './components/tableForm/TableForm.vue';
 import SignaturePad from './components/SignaturePad.vue';
 import FcTitle from './components/FcTitle.vue';
-import FcCounterPreview from './components/FcCounterPreview.vue';
 import TableFormColumnView from './components/tableForm/TableFormColumnView.vue';
 import SizeInput from './components/style/SizeInput.vue';
 import ColorInput from './components/style/ColorInput.vue';
@@ -31,6 +30,10 @@ import ValueInput from './components/ValueInput.vue';
 import formCreate, {designerForm} from './utils/form';
 import FcEditor from '@form-create/component-wangeditor';
 import draggable from 'vuedraggable/src/vuedraggable';
+import AuiWeb from '@agree/aui-plus/es/aui-web'
+import '@agree/aui-plus/aui-web/theme-chalk/index.css'
+// import AuiWeb from '@agree/aui-web';
+// import FcAuiWeb from 'fc-aui-web';
 import {
     compareVersion,
     copyTextToClipboard,
@@ -83,10 +86,11 @@ addComponent('FcTitle', FcTitle);
 addComponent('SignaturePad', SignaturePad);
 addComponent('TableForm', TableForm, TableFormView);
 addComponent('FcTable', Table, TableView);
-designerForm.component('fcCounter', FcCounterPreview);
 
 const install = function (Vue) {
     Vue.component('FcDesigner', FcDesigner);
+    Vue.use(AuiWeb);
+    // Vue.use(FcAuiWeb);
 };
 
 const addMenu = function (menu, before) {
