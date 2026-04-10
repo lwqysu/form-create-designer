@@ -86,8 +86,7 @@ export default {
                 field: 'trigger',
                 options: localeOptions(t, [
                     {label: 'Enter', value: 'Enter'},
-                    {label: 'Space', value: 'Space'},
-                    {label: 'Comma', value: 'Comma'}
+                    {label: 'Space', value: 'Space'}
                 ])
             },
             {

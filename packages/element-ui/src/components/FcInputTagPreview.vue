@@ -13,7 +13,6 @@
                 :placeholder="placeholder || '请输入标签'" 
                 @keyup.enter="handleKeyup('Enter')" 
                 @keyup.space="handleKeyup('Space')" 
-                @keyup.comma="handleKeyup('Comma')"
                 v-model="inputValue"
                 :disabled="disabled"
                 :readonly="readonly"
