@@ -26,8 +26,8 @@ import dateRange from './rule/dateRange';
 import rate from './rule/rate';
 import fcRate from './rule/fcRate';
 import color from './rule/color';
-import row from './rule/row';
-import col from './rule/col';
+import FCRow from './rule/fcRow';
+import FCCol from './rule/fcCol';
 import tabPane from './rule/tabPane';
 import divider from './rule/divider';
 import cascader from './rule/cascader';
@@ -43,25 +43,26 @@ import text from './rule/text';
 import fcText from './rule/fcText';
 import space from './rule/space';
 import tabs from './rule/tabs';
+import FCTabs from './rule/fcTabs';
 import button from './rule/button';
 import fcButton from './rule/fcButton';
 import editor from './rule/editor';
 import group from './rule/group';
 import subForm from './rule/subForm';
 import card from './rule/card';
+import FCCard from './rule/fcCard';
 import collapse from './rule/collapse';
+import FCCollapse from './rule/fcCollapse';
 import collapseItem from './rule/collapseItem';
 import treeSelect from './rule/treeSelect';
 import tag from './rule/tag';
 import fcTag from './rule/fcTag';
 import fcInputTag from './rule/fcInputTag';
 import html from './rule/html';
-import table from './rule/table';
-import tableForm from './rule/tableForm';
-import tableFormColumn from './rule/tableFormColumn';
 import image from './rule/image';
 import signaturePad from './rule/signaturePad';
 import title from './rule/title';
+import FCTabItem from './rule/fcTabItem';
 
 
 const ruleList = [
@@ -83,15 +84,15 @@ const ruleList = [
     transfer, fcTransfer,
     tree, fcTree,
     treeSelect, editor, signaturePad,
-    group, subForm, tableForm, tableFormColumn,
+    group, subForm, 
     alert,
     button, fcButton,
     text, fcText,
     title, html, divider,
     tag, fcTag, fcInputTag,
     image,
-    row, table, tabs, space, card, collapse,
-    col, tabPane, collapseItem,
+    tabs, space, card, collapse, FCRow, FCCard, FCCollapse, FCTabs,
+    tabPane, collapseItem, FCCol, FCTabItem,
 ];
 
 export default ruleList;

@@ -1,22 +1,21 @@
 <template>
-    <div class="_fd-row el-row" :class="{'_fc-child-empty' : !$slots.default}" v-bind="$attrs">
+    <el-row class="_fd-fc-row" :class="{ '_fc-child-empty': !$slots.default }" v-bind="$attrs">
         <slot name="default"></slot>
-    </div>
+    </el-row>
 </template>
 
 <script>
-import {defineComponent} from 'vue';
+import { defineComponent } from 'vue';
 
 export default defineComponent({
-    name: 'fcRow',
+    name: 'FCRow',
     mounted() {
     }
-
 });
 </script>
 
 <style>
-._fd-row {
+._fd-fc-row {
     width: 100%;
     box-sizing: border-box;
     display: flex;

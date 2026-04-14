@@ -642,7 +642,63 @@ const En = {
                 gutter: 'Grid interval',
                 type: 'Flex layout mode',
                 justify: 'Horizontal arrangement under flex layout',
-                align: 'Vertical arrangement under flex layout'
+                align: 'Vertical arrangement under flex layout',
+                orient: 'Layout direction',
+                wrap: 'flex-wrap property',
+                direction: 'flex-direction property'
+            }
+        },
+        fcCol: {
+            name: 'Col',
+            props: {
+                span: 'Number of columns occupied by grid',
+                offset: 'Number of spaces on the left side of the grid',
+                push: 'Move the grid to the right by the number of cells',
+                pull: 'Move the grid to the left by the number of cells',
+                sm: '≥768px responsive grid number',
+                order: 'flex order property',
+                background: 'col background color'
+            }
+        },
+        fcCard: {
+            name: 'Card',
+            props: {
+                header: 'Header title',
+                footerText: 'Footer title',
+                footerLink: 'Footer link'
+            }
+        },
+        fcCollapse: {
+            name: 'Collapse',
+            props: {
+                accordion: 'Accordion mode',
+                options: 'Collapse items'
+            }
+        },
+        fcTabs: {
+            name: 'Tabs',
+            props: {
+                type: 'Style type',
+                closable: 'Whether the label can be closed',
+                addable: 'Whether the label can be added',
+                'v-model': 'Bound value',
+                position: 'Tab position',
+                barColor: 'Bottom bar color',
+                activeTextColor: 'Active text color',
+                defaultTextColor: 'Default text color',
+                disabledTextColor: 'Disabled text color'
+            }
+        },
+        fcTabItem: {
+            name: 'Tab Item',
+            props: {
+                label: 'Tab title',
+                name: 'Identifier corresponding to tab activeName',
+                disabled: 'Disabled',
+                closable: 'Whether the label can be closed',
+                badgeLabel: 'Badge text',
+                badgeBackground: 'Badge background color',
+                badgeColor: 'Badge text color'
             }
         },
         fcTable: {

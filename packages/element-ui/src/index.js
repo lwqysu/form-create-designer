@@ -1,7 +1,6 @@
 import FcDesigner from './components/FcDesigner.vue';
 import DragTool from './components/DragTool.vue';
 import Struct from './components/Struct.vue';
-import Row from './components/Row.vue';
 import HtmlEditor from './components/HtmlEditor.vue';
 import FnEditor from './components/FnEditor.vue';
 import FnInput from './components/FnInput.vue';
@@ -10,15 +9,11 @@ import ConfigItem from './components/style/ConfigItem.vue';
 import FieldInput from './components/FieldInput.vue';
 import EventConfig from './components/EventConfig.vue';
 import FnConfig from './components/FnConfig.vue';
-import TableView from './components/table/TableView.vue';
-import Table from './components/table/Table.vue';
 import Validate from './components/Validate.vue';
 import DragBox from './components/DragBox.vue';
 import Required from './components/Required.vue';
 import TableOptions from './components/TableOptions.vue';
 import TreeOptions from './components/TreeOptions.vue';
-import TableFormView from './components/tableForm/TableFormView.vue';
-import TableForm from './components/tableForm/TableForm.vue';
 import SignaturePad from './components/SignaturePad.vue';
 import FcTitle from './components/FcTitle.vue';
 import FcInputTagPreview from './components/FcInputTagPreview.vue';
@@ -28,6 +23,13 @@ import ColorInput from './components/style/ColorInput.vue';
 import StyleConfig from './components/style/StyleConfig.vue';
 import LanguageInput from './components/language/LanguageInput.vue';
 import ValueInput from './components/ValueInput.vue';
+import FCRow from './components/FCRow.vue';
+import FCCol from './components/FCCol.vue';
+import FCCard from './components/FCCard.vue';
+import FCCollapse from './components/FCCollapse.vue';
+import FCCollapseItem from './components/FCCollapseItem.vue';
+import FCTabs from './components/FCTabs.vue';
+import FCTabItem from './components/FCTabItem.vue';
 import formCreate, {designerForm} from './utils/form';
 import FcEditor from '@form-create/component-wangeditor';
 import draggable from 'vuedraggable/src/vuedraggable';
@@ -80,14 +82,27 @@ designerForm.component('LanguageInput', LanguageInput);
 designerForm.component('ConfigItem', ConfigItem);
 designerForm.component('FieldInput', FieldInput);
 designerForm.component('FnConfig', FnConfig);
-designerForm.component('FcRow', Row);
 designerForm.component('ValueInput', ValueInput);
 addComponent('FcEditor', FcEditor);
 addComponent('FcTitle', FcTitle);
 addComponent('SignaturePad', SignaturePad);
-addComponent('TableForm', TableForm, TableFormView);
-addComponent('FcTable', Table, TableView);
 designerForm.component('fcInputTag', FcInputTagPreview);
+
+// 注册 FC 布局组件 - 使用 Element UI 原生组件作为预览
+designerForm.component('fcRow', FCRow);
+designerForm.component('fcCol', FCCol);
+designerForm.component('fcCard', FCCard);
+designerForm.component('fcCollapse', FCCollapse);
+designerForm.component('fcTabs', FCTabs);
+designerForm.component('fcTabItem', FCTabItem);
+// 同时注册带连字符的格式以确保兼容性
+designerForm.component('FC-row', FCRow);
+designerForm.component('FC-col', FCCol);
+designerForm.component('FC-card', FCCard);
+designerForm.component('FC-collapse', FCCollapse);
+designerForm.component('FC-collapse-item', FCCollapseItem);
+designerForm.component('FC-tabs', FCTabs);
+designerForm.component('FC-tab-item', FCTabItem);
 
 const install = function (Vue) {
     Vue.component('FcDesigner', FcDesigner);

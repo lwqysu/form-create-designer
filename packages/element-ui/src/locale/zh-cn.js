@@ -630,12 +630,68 @@ const ZhCn = {
             }
         },
         fcRow: {
-            name: '栅格布局',
+            name: 'FC栅格布局',
             props: {
                 gutter: '栅格间隔',
                 type: 'flex布局模式',
                 justify: 'flex布局下的水平排列方式',
-                align: 'flex布局下的垂直排列方式'
+                align: 'flex布局下的垂直排列方式',
+                orient: '排布方向',
+                wrap: 'flex的flex-wrap属性',
+                direction: 'flex的flex-direction属性'
+            }
+        },
+        fcCol: {
+            name: 'FC栅格列',
+            props: {
+                span: '栅格占据的列数',
+                offset: '栅格左侧的间隔格数',
+                push: '栅格向右移动格数',
+                pull: '栅格向左移动格数',
+                sm: '≥768px 响应式栅格数',
+                order: 'flex的order属性',
+                background: 'col列的背景颜色'
+            }
+        },
+        fcCard: {
+            name: 'FC卡片',
+            props: {
+                header: '头部标题',
+                footerText: '底部标题',
+                footerLink: '底部链接'
+            }
+        },
+        fcCollapse: {
+            name: 'FC折叠面板',
+            props: {
+                accordion: '是否手风琴模式',
+                options: '折叠面板条目'
+            }
+        },
+        fcTabs: {
+            name: 'FC标签页',
+            props: {
+                type: '风格类型',
+                closable: '标签是否可关闭',
+                addable: '标签是否可增加',
+                'v-model': '绑定值',
+                position: '选项卡所在位置',
+                barColor: '底部bar颜色',
+                activeTextColor: '选中时文字颜色',
+                defaultTextColor: '默认文字颜色',
+                disabledTextColor: '不可点击时文字颜色'
+            }
+        },
+        fcTabItem: {
+            name: 'FC标签页项',
+            props: {
+                label: '选项卡标题',
+                name: '与选项卡 activeName 对应的标识符',
+                disabled: '是否禁用',
+                closable: '标签是否可关闭',
+                badgeLabel: '徽标文字',
+                badgeBackground: '徽标背景颜色',
+                badgeColor: '徽标文字颜色'
             }
         },
         fcTable: {
