@@ -1,15 +1,15 @@
 import {localeProps} from '../../utils';
 
 const label = 'FC折叠面板';
-const name = 'fcCollapse';
+const name = 'elCollapse';
 
 export default {
     menu: 'layout',
     icon: 'icon-collapse',
     label,
     name,
-    drag: true,
     mask: false,
+    children: 'elCollapseItem',
     event: ['change'],
     rule() {
         return {
@@ -25,12 +25,6 @@ export default {
         return localeProps(t, name + '.props', [{
             type: 'switch',
             field: 'accordion'
-        }, {
-            type: 'input',
-            field: 'options',
-            props: {
-                type: 'textarea'
-            }
         }]);
     }
 };

@@ -93,6 +93,7 @@ designerForm.component('fcRow', FCRow);
 designerForm.component('fcCol', FCCol);
 designerForm.component('fcCard', FCCard);
 designerForm.component('fcCollapse', FCCollapse);
+designerForm.component('fcCollapseItem', FCCollapseItem);
 designerForm.component('fcTabs', FCTabs);
 designerForm.component('fcTabItem', FCTabItem);
 // 同时注册带连字符的格式以确保兼容性

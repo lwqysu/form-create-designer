@@ -54,6 +54,8 @@ import image from './rule/image';
 import signaturePad from './rule/signaturePad';
 import title from './rule/title';
 import FCTabItem from './rule/fcTabItem';
+import FCCollapseItem from './rule/fcCollapseItem';
+import FCCol from './rule/fcCol';
 
 
 const ruleList = [
@@ -80,8 +82,8 @@ const ruleList = [
     text, fcText,
     title, html, divider,
     tag, fcTag, fcInputTag,
-    image, FCRow, FCCard, FCCollapse, FCTabs,
-    FCTabItem,
+    image, FCRow, FCCard, FCCollapse,FCCollapseItem, FCTabs,
+    FCTabItem, FCCol,
 ];
 
 export default ruleList;

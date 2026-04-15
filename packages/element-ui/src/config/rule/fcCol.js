@@ -4,7 +4,6 @@ const label = 'FC格子';
 const name = 'fcCol';
 
 export default {
-    menu: 'layout',
     name,
     label,
     drag: true,
