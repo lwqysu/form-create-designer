@@ -27,8 +27,6 @@ import rate from './rule/rate';
 import fcRate from './rule/fcRate';
 import color from './rule/color';
 import FCRow from './rule/fcRow';
-import FCCol from './rule/fcCol';
-import tabPane from './rule/tabPane';
 import divider from './rule/divider';
 import cascader from './rule/cascader';
 import fcCascader from './rule/fcCascader';
@@ -41,19 +39,12 @@ import fcTree from './rule/fcTree';
 import alert from './rule/alert';
 import text from './rule/text';
 import fcText from './rule/fcText';
-import space from './rule/space';
-import tabs from './rule/tabs';
 import FCTabs from './rule/fcTabs';
 import button from './rule/button';
 import fcButton from './rule/fcButton';
 import editor from './rule/editor';
-import group from './rule/group';
-import subForm from './rule/subForm';
-import card from './rule/card';
 import FCCard from './rule/fcCard';
-import collapse from './rule/collapse';
 import FCCollapse from './rule/fcCollapse';
-import collapseItem from './rule/collapseItem';
 import treeSelect from './rule/treeSelect';
 import tag from './rule/tag';
 import fcTag from './rule/fcTag';
@@ -84,15 +75,13 @@ const ruleList = [
     transfer, fcTransfer,
     tree, fcTree,
     treeSelect, editor, signaturePad,
-    group, subForm, 
     alert,
     button, fcButton,
     text, fcText,
     title, html, divider,
     tag, fcTag, fcInputTag,
-    image,
-    tabs, space, card, collapse, FCRow, FCCard, FCCollapse, FCTabs,
-    tabPane, collapseItem, FCCol, FCTabItem,
+    image, FCRow, FCCard, FCCollapse, FCTabs,
+    FCTabItem,
 ];
 
 export default ruleList;
