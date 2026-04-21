@@ -6,7 +6,7 @@ import ZhCn from '../locale/zh-cn';
 import {message} from './message';
 import {copy} from '@form-create/utils/lib/extend';
 
-export {formTemplate, formTemplateV3, htmlTemplate} from './template';
+export {formTemplate, formTemplateV3, htmlTemplate, sfcTemplate} from './template';
 
 
 export function makeRequiredRule() {

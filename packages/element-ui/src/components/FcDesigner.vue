@@ -343,9 +343,9 @@
                     <el-tabs class="_fd-preview-tabs" v-model="previewStatus">
                         <el-tab-pane :label="t('form.formMode')" name="form"></el-tab-pane>
                         <el-tab-pane :label="t('form.componentMode')" name="component"></el-tab-pane>
-                        <el-tab-pane :label="t('form.htmlMode')" name="html"></el-tab-pane>
+                        <el-tab-pane :label="t('form.sfcMode')" name="sfc"></el-tab-pane>
                     </el-tabs>
-                    <div class="_fd-preview-copy" v-if="['component', 'html'].indexOf(previewStatus) > -1"
+                    <div class="_fd-preview-copy" v-if="['component', 'sfc'].indexOf(previewStatus) > -1"
                          @click="copyCode">
                         <i class="fc-icon icon-copy"></i>
                     </div>
@@ -361,7 +361,7 @@
                         </ViewForm>
                     </template>
                     <pre class="_fd-preview-code" ref="previewCode" v-else-if="previewStatus === 'component'"><code v-html="preview.component"></code></pre>
-                    <pre class="_fd-preview-code" ref="previewCode" v-else><code v-html="preview.html"></code></pre>
+                    <pre class="_fd-preview-code" ref="previewCode" v-else><code v-html="preview.sfc"></code></pre>
                 </el-dialog>
             </el-container>
         </el-main>
@@ -393,6 +393,7 @@ import {
     getRuleDescription,
     getRuleTree,
     htmlTemplate,
+    sfcTemplate,
     isNull,
     throttle,
     uniqueArray,
@@ -997,13 +998,13 @@ export default defineComponent({
                 const options = methods.getOptionsJson();
                 data.preview.rule = designerForm.parseJson(rule);
                 data.preview.option = designerForm.parseJson(options);
-                const useV2 = methods.getConfig('useTemplate', false);
+                const useV2 = methods.getConfig('useTemplate', true);
                 data.preview.component = hljs.highlight(
                     useV2 ? formTemplate(rule, options) : formTemplateV3(rule, options),
                     {language: 'xml'}
                 ).value
-                data.preview.html = hljs.highlight(
-                    htmlTemplate(rule, options),
+                data.preview.sfc = hljs.highlight(
+                    sfcTemplate(rule, options),
                     {language: 'xml'}
                 ).value
             },
